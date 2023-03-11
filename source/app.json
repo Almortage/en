@@ -1,0 +1,141 @@
+{
+    "name": "𝙎𝙤𝙐𝙍𝙘𝙀 𝙎𝙋𝙞𝙙𝙀𝙍",
+    "description": "Telegram Group Calls streaming bot with some useful features, written in Python with Pyrogram and Py-Tgcalls. Supporting platforms like Youtube, Spotify, Resso, AppleMusic, Soundcloud and M3u8 Links.",
+    "logo": "https://telegra.ph/file/1a38e52936d7007199c78.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "Yukki",
+    "YukkiMusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "stack": "container",
+    "env": {
+      "API_ID": {
+        "description": "حـط هـنـا ايـبـي ايـدي",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "حـط هـنـا ايـبـي هـاش",
+        "value": "",
+        "required": true
+      },
+      "AUTO_LEAVING_ASSISTANT": {
+        "description": "If you want your assistant to leave all chats automatically after some time.",
+        "value": "True",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "حـط هـنـا تـوكـن بـوتـك .",
+        "value": "",
+        "required": true
+      },
+      "GIT_TOKEN": {
+        "description": "حـط هـنـا تـوكـن بـوتـك .",
+        "value": "",
+        "required": true
+      },  
+      "BOT_USERNAME": {
+        "description": "حـط هـنـا يـوزر الـبـوت بـدون @ .",
+        "value": "reshtybot",
+        "required": true
+      },
+      "MONGO_DB_URI": {
+        "description": "حـط هـنـا كـود الـمـونـجـو .",
+        "value": "mongodb+srv://bot_vambir:Al2552001@cluster0.heabj.mongodb.net/vambir_bot?retryWrites=true&w=majority",
+        "required": false
+      },
+      "MUSIC_BOT_NAME": {
+        "description": "حـط اسـم الـبـوت انـجـلـش كـابيتال زي - 
+SPIDER.",
+        "value": "SPIDER",
+        "required": true
+      },
+      "NAME_BOT": {
+        "description": "حـط اسـم الـبـوت ب الـعـربـي زي سـبايدر .",
+        "value": "سبايدر",
+        "required": true
+      },
+      "OWNER": {
+        "description": "حـط هـنـا يـوزر الـمـطور مـنـغـيـر عـلامه @ .",
+        "value": "WWWL5",
+        "required": true
+      },
+      "OWNER_USER": {
+        "description": "حـط هـنا يـوزر الـمـطور بعلامه @ .",
+        "value": "@WWWL5",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "حـط هـنا ايدي الـمطـور .",
+        "value": "5656828413",
+        "required": true
+      },
+      "IMG_DEV1": {
+        "description": "حـط لينك صـورة المطور .",
+        "value": "https://telegra.ph/file/1a38e52936d7007199c78.jpg",
+        "required": true
+      },
+      "IMG_BOT1": {
+        "description": "حـط لينك صـورة البوت .",
+        "value": "https://telegra.ph/file/1a38e52936d7007199c78.jpg",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "حـط كـود جـلسة بايروجرام هنا .",
+        "value": "",
+        "required": true
+      },
+      "HEROKU_API_KEY": {
+        "description": "Your Heroku account's API key",
+        "value": "",
+        "required": false
+      },
+      "HEROKU_APP_NAME": {
+        "description": "حـط اول اسم كتبتوو فوق",
+        "value": "",
+        "required": false
+      },
+      "LOG_GROUP_ID": {
+        "description": "حـط ايدي جروب البوتات وارفع البوت والحساب المساعد مشرف الاول .",
+        "value": "-1001613226619",
+        "required": true
+      },
+      "START_IMG_URL": {
+        "description": "Telegraph Image URL For Start Command",
+        "value": "https://telegra.ph/file/1a38e52936d7007199c78.jpg",
+        "required": true
+      },      
+      "UPSTREAM_REPO": {
+        "description": "سيبها زي مهيا .",
+        "value": "git clone https://github.com/o0ooo0oo/arab1",
+        "required": true
+      },
+      "UPSTREAM_BRANCH": {
+        "description": "Upstream Repo's Branch Name",
+        "value": "master",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "formation": {
+          "worker": {
+              "quantity": 1,
+              "size": "free"
+          }
+      },
+      "stack": "container"
+  }
