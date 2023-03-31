@@ -19,7 +19,7 @@ async def play_logs(message, streamtype):
         else:
             chatusername = "Private Group"
         logger_text = f"""
-**[SOURCE SEMO](https://t.me/semo15sbot)**
+**[SOURCE SPIDER](https://t.me/EE_20)**
 
 **اسم الجروب:** {message.chat.title} [`{message.chat.id}`]
 **اسم المستخدم:** {message.from_user.mention}
