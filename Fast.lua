@@ -754,7 +754,7 @@ data = {
 },
 }
 }
-send(data.chat_id,data.id,"⎊ اهلا بك في صانع بوتات ميوزك سورس سبايدر \n⎊ مطور االسورس @WWWL5,"html",true, false, false, true, reply_markup)
+send(data.chat_id,data.id,"⎊ اهلا بك في صانع بوتات ميوزك سورس سبايدر \n⎊ مطور االسورس @WWWL5","html",true, false, false, true, reply_markup)
 return false 
 end
 ---making user
